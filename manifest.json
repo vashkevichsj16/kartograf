@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Kartograf",
+  "version": "0.1",
+  "content_scripts": [
+		{
+			"matches": [
+				"http://www.fantasyland.ru/main*"
+			],
+			"js": [ "StartingSettings.js", "Utils.js", "index.js","fight.js", "Moving.js"]
+		}
+	]
+}
