@@ -5,9 +5,11 @@
   "content_scripts": [
 		{
 			"matches": [
-				"http://www.fantasyland.ru/main*"
+				"https://www.fantasyland.ru/main*"
 			],
-			"js": [ "StartingSettings.js", "Utils.js", "index.js","fight.js", "Moving.js"]
+			"css": ["style.css"],
+			"js": [ "StartingSettings.js", "Utils.js", "index.js","fight.js", "Moving.js", "map/Map.js", "LabMap.js"]
 		}
-	]
+	],
+	"web_accessible_resources": ["style.css"]
 }
